@@ -12,11 +12,6 @@ export default {
     extend: {
       colors: {
         /*Brand Colors*/
-        "primary-color": "#6962f7",
-        "secondary-color": "#7000ff",
-        "primary-accent": "#0a2540",
-        "primary-button-hover": "#6d7a88",
-        "primary-blue": "#00d4ff",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

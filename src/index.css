@@ -10,15 +10,12 @@
   }
 
   body {
-    @apply bg-yellow-200 text-white w-full h-screen flex justify-center;
+    @apply bg-[#dad2bc] text-white w-full h-screen flex justify-center;
   }
 }
 
 @layer utilities {
   /* TYPOGRAPHY */
-  a {
-    @apply no-underline text-primary-color font-medium hover:text-primary-accent ease-in;
-  }
 
   .h1-semibold {
     @apply text-[36px] font-semibold leading-[140%] tracking-tighter;

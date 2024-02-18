@@ -1,15 +1,18 @@
-import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import BlogPosts from "./pages/BlogPosts";
+import SinglePost from "./pages/SinglePost";
 
 function App() {
   return (
-    <div className="text-3xl">
-      <h1 className="h1-semibold">Hola</h1>
-      <h2>Hola</h2>
-      <h3>Hola</h3>
-      <h4>Hola</h4>
-      <h6>Hola</h6>
-      <a>Click me</a>
-    </div>
+    <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/posts" element={<BlogPosts />}>
+          <Route path="/:postid" element={<SinglePost />} />
+        </Route>
+      </Routes>
+    </main>
   );
 }
 
